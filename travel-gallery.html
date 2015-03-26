@@ -9,6 +9,66 @@
 
 	<title></title>
 	<style type="text/css">
+	
+		html { background-color: #eaeaea; }  
+  
+			#mainwrapper {  
+			  font: 10pt normal Arial, sans-serif;  
+			  height: auto;    
+			  text-align: center;  
+			  width: 660px; 
+			}  
+			
+			#mainwrapper .box {   
+			    cursor: pointer;  
+			    height: 205px;  
+			    float: left;    
+			    position: relative;  
+			   	overflow: hidden;
+			    width: 270px;  
+			}  
+			  
+			#mainwrapper .box img {  
+			    position: absolute;  
+			    left: 0;  
+			    -webkit-transition: all 300ms ease-out;  
+			    -moz-transition: all 300ms ease-out;  
+			    -o-transition: all 300ms ease-out;  
+			    -ms-transition: all 300ms ease-out;  
+			    transition: all 300ms ease-out;  
+			}  
+			
+			#mainwrapper .box .caption {  
+			    background-color: rgba(0,0,0,0.8);  
+			    position: absolute;  
+			    color: #fff;  
+			    z-index: 100;  
+			    -webkit-transition: all 300ms ease-out;  
+			    -moz-transition: all 300ms ease-out;  
+			    -o-transition: all 300ms ease-out;  
+			    -ms-transition: all 300ms ease-out;  
+			    transition: all 300ms ease-out;  
+			    left: 0;  
+			}  
+			
+			#mainwrapper .box .full-caption {  
+			    width: 261px;  
+			    height: 201px;  
+			    bottom: -170px;  
+			    text-align: left;  
+			    margin-left: 4px; 
+			    padding: 15px; 
+			}  
+						
+			#mainwrapper .box:hover .full-caption {  
+			    -moz-transform: translateY(-84%);  
+			    -o-transform: translateY(-84%);  
+			    -webkit-transform: translateY(-84%);  
+			    transform: translateY(-84%);
+			    margin-top: 0px;  
+			}    
+
+
 		.img-item{
 			padding: 20px 0px 0px 30px;
 		}
@@ -141,10 +201,18 @@
 					</div>
 	 				
 	 				<div class="col-md-4 img-item">
+	 					<div id="mainwrapper">
+				 			<div id="box-2" class="box"> 
 
-	 					<a href"http://getbootstrap.com/components/#dropdowns">
-	 						<img src="http://lorempixel.com/260/195/" title="" class="img-thumbnail img-responsive">
-	 					</a>	
+			 					<a href"http://getbootstrap.com/components/#dropdowns">
+			 						<img src="http://lorempixel.com/260/195/" title="" class="img-thumbnail img-responsive">
+			 					</a>
+			 					<span class="caption full-caption">  
+							        <h3>Fade Caption</h3>  
+							        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>  
+							    </span>
+						    </div>
+						</div><!-- end of #mainwrapper--> 	  	
 	 				</div>
 
 	 				<div class="col-md-4 img-item">
