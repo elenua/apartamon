@@ -9,61 +9,8 @@
 
 	<title></title>
 	<style>
-
-		html { background-color: #eaeaea; }  
-  
-			#mainwrapper {  
-			  font: 10pt normal Arial, sans-serif;  
-			  height: auto;    
-			  text-align: center;  
-			  width: 660px;   
-			}  
-			
-			#mainwrapper .box {   
-			    cursor: pointer;  
-			    height: 208px;  
-			    float: left;    
-			    position: relative;  
-			    overflow: hidden;  
-			    width: 273px;  
-			}  
-			  
-			#mainwrapper .box img {  
-			    position: absolute;  
-			    left: 0;  
-			    -webkit-transition: all 300ms ease-out;  
-			    -moz-transition: all 300ms ease-out;  
-			    -o-transition: all 300ms ease-out;  
-			    -ms-transition: all 300ms ease-out;  
-			    transition: all 300ms ease-out;  
-			}  
-			
-			#mainwrapper .box .caption {  
-			    background-color: rgba(0,0,0,0.8);  
-			    position: absolute;  
-			    color: #fff;  
-			    z-index: 100;  
-			    -webkit-transition: all 300ms ease-out;  
-			    -moz-transition: all 300ms ease-out;  
-			    -o-transition: all 300ms ease-out;  
-			    -ms-transition: all 300ms ease-out;  
-			    transition: all 300ms ease-out;  
-			    left: 0;  
-			}  
-			
-			#mainwrapper .box .fade-caption, #mainwrapper .box .scale-caption {  
-			    opacity: 0;  
-			    width: 273px;  
-			    height: 208px;  
-			    text-align: left;  
-			    padding: 15px;  
-			}  
-			
-			#mainwrapper .box:hover .fade-caption {  
-			    opacity: 1;  
-			} 	
-
-
+		.img-item{
+			width: 100%;
 
 		  .object-item{
 		  	padding: 5px;
@@ -73,7 +20,7 @@
 		  	border-radius: 6px;
 		  }
 	      #map-canvas {
-	        height: 100%;   
+	       	height: 100%;   
 	      }
 	      #map{
 	      	max-width:100%;
@@ -303,16 +250,9 @@
 							<!-- img details -->
 				 			<div class="row outline">
 				 				<div class="col-md-6 object-item">
-
-				 					<div id="mainwrapper">
-				 						<div id="box-3" class="box"> 
-							 				<img id="image-3" src="http://lorempixel.com/263/198/" title="" class="img-thumbnail img-responsive">
-							 				<span class="caption fade-caption">  
-									        <h3>Fade Caption</h3>  
-									        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>  
-									        </span>
-									    </div>
-									</div><!-- end of #mainwrapper--> 	      
+ 
+					 				<img id="image-3" src="http://lorempixel.com/263/198/" title="" class="img-thumbnail img-responsive img-item">
+									<!-- end of #mainwrapper--> 	      
 					 			</div>
 					 			<div class="col-md-6">
 					 				
@@ -334,17 +274,9 @@
 
 					 		<!-- img details -->
 				 			<div class="row outline">
-				 				<div class="col-md-6 object-item">
-
-					 				<div id="mainwrapper">
-				 						<div id="box-3" class="box"> 
-							 				<img id="image-3" src="http://lorempixel.com/263/198/" title="" class="img-thumbnail img-responsive">
-							 				<span class="caption fade-caption">  
-									        <h3>Fade Caption</h3>  
-									        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>  
-									        </span>
-									    </div>
-									</div><!-- end of #mainwrapper--> 
+				 				<div class="col-md-6 object-item"> 
+					 				<img id="image-3" src="http://lorempixel.com/263/198/" title="" class="img-thumbnail img-responsive img-item">
+							 				
 					 			</div>
 					 			<div class="col-md-6">
 					 				<h4>Title</h4>
@@ -365,15 +297,7 @@
 				 			<div class="row outline">
 				 				<div class="col-md-6 object-item">
 
-					 				<div id="mainwrapper">
-				 						<div id="box-3" class="box"> 
-							 				<img id="image-3" src="http://lorempixel.com/263/198/" title="" class="img-thumbnail img-responsive">
-							 				<span class="caption fade-caption">  
-									        <h3>Fade Caption</h3>  
-									        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>  
-									        </span>
-									    </div>
-									</div><!-- end of #mainwrapper--> 
+							 				<img id="image-3" src="http://lorempixel.com/263/198/" title="" class="img-thumbnail img-responsive img-item">
 					 			</div>
 					 			<div class="col-md-6">
 					 	 			<h4>Title</h4>
@@ -408,9 +332,9 @@
 
 	<footer class="footer">
   		<div class="container">
-        	<small><a href="">About US</a></small>&nbsp
-        	<small><a href="">Terms of Service</a></small>&nbsp
-        	<small><a href="">Private policy</a></small>&nbsp
+        	<small><a href="">About US</a></small>&nbsp;
+        	<small><a href="">Terms of Service</a></small>&nbsp;
+        	<small><a href="">Private policy</a></small>&nbsp;
       	</div>
 	</footer>
 	 				
