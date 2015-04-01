@@ -10,7 +10,7 @@
 	<title></title>
 	<style type="text/css">
 		
-		#destination{
+		.destination{
 			background: orange;
 			border: 1px gray solid;
 			padding: 10px;
@@ -43,9 +43,9 @@
       
       			<ul class="nav navbar-nav navbar-right">
       				<li>
-        				<a class="btn btn-default" href="#" role="button">Details</a>
+        				<a class="btn btn-default" href="#" role="button">Si</a>
     				</li>
-       				<li><a href="#">Gallery</a></li>
+       				<li><a href="#">Sign in</a></li>
         
       			</ul>
     		</div><!-- /.navbar-collapse -->
@@ -57,22 +57,36 @@
 	 	<div class="row">
 	 		<div class="col-md-3">
 	 			<!-- form -->
-	 			<div id="destination">
-			 		<h5>Destination</h5>
-			 		<input type="text" class="form-control input-sm" placeholder="e.g. city/hotel name">
 
-			 		<h5>Check in</h5>
-			 		<input type="text" class="form-control input-sm" placeholder="9 april">
+	 			<form class="destination">
+					<div class="form-group">	
+				 		<label for="InputDestination">Destination</label>
+				 		<input type="text" class="form-control input-sm" id="InputDestination" placeholder="e.g. city/hotel name">
+				 	</div>	
 
-			 		<h5>Check out</h5>
-			 		<input type="text" class="form-control input-sm" placeholder="30 april">
+			 		<div class="form-group">
+			 			<div class="col-md-6">	
+				 			<label for="InputCheckin">check in</label>
+				 			<input type="text" class="form-control input-sm" id="InputCheckin" placeholder="10 june">
+				 		</div>		
+				 	</div>	
 
-			 		<h5>Guests</h5>
-			 		<input type="text" class="form-control input-sm" placeholder="2 adults, 1 children">
-			 	</div>	
+					<div class="form-group">
+					 	<div class="col-md-6">		
+				 			<label for="InputCheckout">check out</label>
+				 			<input type="text" class="form-control input-sm" id="InputCheckout" placeholder="20 june">
+				 		</div>	
+				 	</div>	
+	
+			 		<div class="form-group">	
+				 			<label for="InputGuests">guests</label>
+				 			<input type="text" class="form-control input-sm" id="InputGuests" placeholder="2 adults,1 child">
+				 	</div>
+				 		<button type="submit" class="btn btn-default">Submit</button>		
+				</form>		
 
 		 		<br>
-		 	<div id="destination">	
+		 	<div class="destination">	
 				<h5>PRICE PER NIGHT</h5>
 				<div class="checkbox">
 					<label>
