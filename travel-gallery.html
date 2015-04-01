@@ -10,8 +10,13 @@
 	<title></title>
 	<style type="text/css">
 		
+		#destination{
+			background: orange;
+			border: 1px gray solid;
+			padding: 10px;
+		}
 		.img-box{
-			padding: 3%; 
+			padding: 2%; 
 		}
 
 		.img-item{
@@ -50,11 +55,24 @@
 
 	<div class="container">
 	 	<div class="row">
-	 		<div class="col-md-2">
+	 		<div class="col-md-3">
 	 			<!-- form -->
-		 		<h4>City: San Francisco</h4>
-		 		<input type="text" class="form-control" placeholder="Street">
+	 			<div id="destination">
+			 		<h5>Destination</h5>
+			 		<input type="text" class="form-control input-sm" placeholder="e.g. city/hotel name">
+
+			 		<h5>Check in</h5>
+			 		<input type="text" class="form-control input-sm" placeholder="9 april">
+
+			 		<h5>Check out</h5>
+			 		<input type="text" class="form-control input-sm" placeholder="30 april">
+
+			 		<h5>Guests</h5>
+			 		<input type="text" class="form-control input-sm" placeholder="2 adults, 1 children">
+			 	</div>	
+
 		 		<br>
+		 	<div id="destination">	
 				<h5>PRICE PER NIGHT</h5>
 				<div class="checkbox">
 					<label>
@@ -155,13 +173,14 @@
 					    <input type="checkbox" value="">
 					    Fridge
 					</label>
-				</div>				
+				</div>
+			</div>					
 			<!-- end form -->
-			</div>
+		</div>
 
 			<!-- content -->
 	 		
-	 			<div class="col-md-10">
+	 			<div class="col-md-9">
 	 				<!-- options bar -->
 					<div class="row">
 						<div class="col-md-2">
@@ -182,7 +201,7 @@
 
 				       		
 						<!-- gallery switch -->
-						<div class="col-md-2">
+						<div class="col-md-2 col-md-offset-8">
 							<a class="btn btn-default" href="http://elenua.github.io/travel/travel-list.html" role="button btn-md">
 							<span class="glyphicon glyphicon-th-list" aria-hidden="true"></span></a>
 			
@@ -193,74 +212,75 @@
 						<!-- gallery switch -->	
 					</div>
 	 				
-	 				<div class="col-md-4 img-box">
-	 					<!-- mainwrapper-->
-			 					<a href"http://getbootstrap.com/components/#dropdowns">
-			 						<img src="http://lorempixel.com/260/195/" title="" class="img-thumbnail img-responsive img-item">
-			 					</a>
-						<!-- end of --> 	  	
-	 				</div>
+	 				<div class="row">
+		 				<div class="col-md-4 img-box">
+		 					<!-- mainwrapper-->
+				 					<a href"http://getbootstrap.com/components/#dropdowns">
+				 						<img src="http://lorempixel.com/260/195/" title="" class="img-thumbnail img-responsive img-item">
+				 					</a>
+							<!-- end of --> 	  	
+		 				</div>
 
-	 				<div class="col-md-4 img-box">
+		 				<div class="col-md-4 img-box">
 
-	 					<a href"http://getbootstrap.com/components/#dropdowns">
-	 						<img src="http://lorempixel.com/260/195/" title="" class="img-thumbnail img-responsive img-item">
-	 					</a>	
-	 				</div>
+		 					<a href"http://getbootstrap.com/components/#dropdowns">
+		 						<img src="http://lorempixel.com/260/195/" title="" class="img-thumbnail img-responsive img-item">
+		 					</a>	
+		 				</div>
 
-	 				<div class="col-md-4 img-box">
+		 				<div class="col-md-4 img-box">
 
-	 					<a href"http://getbootstrap.com/components/#dropdowns">
-	 						<img src="http://lorempixel.com/260/195/" title="" class="img-thumbnail img-responsive img-item">
-	 					</a>	
-	 				</div>
+		 					<a href"http://getbootstrap.com/components/#dropdowns">
+		 						<img src="http://lorempixel.com/260/195/" title="" class="img-thumbnail img-responsive img-item">
+		 					</a>	
+		 				</div>
 
 
-	 				<div class="col-md-4 img-box">
+		 				<div class="col-md-4 img-box">
 
-	 					<a href"http://getbootstrap.com/components/#dropdowns">
-	 						<img src="http://lorempixel.com/260/195/" title="" class="img-thumbnail img-responsive img-item">
-	 					</a>	
-	 				</div>
+		 					<a href"http://getbootstrap.com/components/#dropdowns">
+		 						<img src="http://lorempixel.com/260/195/" title="" class="img-thumbnail img-responsive img-item">
+		 					</a>	
+		 				</div>
 
-	 				<div class="col-md-4 img-box">
+		 				<div class="col-md-4 img-box">
 
-	 					<a href"http://getbootstrap.com/components/#dropdowns">
-	 						<img src="http://lorempixel.com/260/195/" title="" class="img-thumbnail img-responsive img-item">
-	 					</a>	
-	 				</div>
+		 					<a href"http://getbootstrap.com/components/#dropdowns">
+		 						<img src="http://lorempixel.com/260/195/" title="" class="img-thumbnail img-responsive img-item">
+		 					</a>	
+		 				</div>
 
-	 				<div class="col-md-4 img-box">
+		 				<div class="col-md-4 img-box">
 
-	 					<a href"http://getbootstrap.com/components/#dropdowns">
-	 						<img src="http://lorempixel.com/260/195/" title="" class="img-thumbnail img-responsive img-item">
-	 					</a>	
-	 				</div>
+		 					<a href"http://getbootstrap.com/components/#dropdowns">
+		 						<img src="http://lorempixel.com/260/195/" title="" class="img-thumbnail img-responsive img-item">
+		 					</a>	
+		 				</div>
 
-	 				<div class="col-md-4 img-box">
+		 				<div class="col-md-4 img-box">
 
-	 					<a href"http://getbootstrap.com/components/#dropdowns">
-	 						<img src="http://lorempixel.com/260/195/" title="" class="img-thumbnail img-responsive img-item">
-	 					</a>	
-	 				</div>
+		 					<a href"http://getbootstrap.com/components/#dropdowns">
+		 						<img src="http://lorempixel.com/260/195/" title="" class="img-thumbnail img-responsive img-item">
+		 					</a>	
+		 				</div>
 
-	 				<div class="col-md-4 img-box">
+		 				<div class="col-md-4 img-box">
 
-	 					<a href"http://getbootstrap.com/components/#dropdowns">
-	 						<img src="http://lorempixel.com/260/195/" title="" class="img-thumbnail img-responsive img-item">
-	 					</a>	
-	 				</div>
+		 					<a href"http://getbootstrap.com/components/#dropdowns">
+		 						<img src="http://lorempixel.com/260/195/" title="" class="img-thumbnail img-responsive img-item">
+		 					</a>	
+		 				</div>
 
-	 				<div class="col-md-4 img-box">
+		 				<div class="col-md-4 img-box">
 
-	 					<a href"http://getbootstrap.com/components/#dropdowns">
-	 						<img src="http://lorempixel.com/260/195/" title="" class="img-thumbnail img-responsive img-item">
-	 					</a>	
-	 				</div>
-	 		
-	 			</div>
-	 
-	 		<!-- end content -->		
+		 					<a href"http://getbootstrap.com/components/#dropdowns">
+		 						<img src="http://lorempixel.com/260/195/" title="" class="img-thumbnail img-responsive img-item">
+		 					</a>	
+		 				</div>
+		 		
+		 			</div>
+		 		</div>
+		 		<!-- end content -->		
 
 		</div>
 	</div>
