@@ -7,6 +7,8 @@
 	<!-- Custom styles for this template -->
     <link href="./css/sticky-footer.css" rel="stylesheet">
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
 	<title></title>
 	<style type="text/css">
@@ -23,16 +25,21 @@
 		.img-item{
 			width: 100%;
 		}
+		.navbar-default{
+			background: transparent;
+		}
 	</style>
 </head>
 <body>
 	<!-- navbar -->
-	<header class="header header-animated">
+	
+
+ 	<header class="header header-animated">
       <div class="container">
         <nav class="navbar navbar-default" role="navigation">
           <div class="navbar-header">
             <a class="logo" href="index.html">
-              <img src="img/logo-dark.png" data-logo-default="img/logo-light.png" data-logo-alt="img/logo-dark.png" alt="Travellinghkjjjjjjjjjj" />
+              <img src="http://lorempixel.com/260/50/" data-logo-default="http://lorempixel.com/260/50/" data-logo-alt="Logo" alt="Logo" />
             </a>
           </div>
 
@@ -74,27 +81,19 @@
                 <a href="#contactUs" class="scroll">Contact Us</a>
               </li>
 
-              <li class="dropdown">
-                <a href="" class="dropdown-toggle" data-toggle="dropdown">Pages<i class="fa fa-angle-down"></i></a>
+				<li class="dropdown">
+	              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+	              <ul class="dropdown-menu" role="menu">
+	                <li><a href="#">Action</a></li>
+	                <li><a href="#">Another action</a></li>
+	                <li><a href="#">Something else here</a></li>
+	                <li class="divider"></li>
+	                <li class="dropdown-header">Nav header</li>
+	                <li><a href="#">Separated link</a></li>
+	                <li><a href="#">One more separated link</a></li>
+	              </ul>
+	            </li>
 
-                <ul class="dropdown-menu animated fadeInUp" role="menu">
-                  <li>
-                    <a href="blog.html">Blog</a>
-                  </li>
-                  <li>
-                    <a href="post.html">Blog One Post</a>
-                  </li>
-                  <li>
-                    <a href="aboutUs.html">About Us</a>
-                  </li>
-                  <li>
-                    <a href="aboutUs2.html">About Us II</a>
-                  </li>
-                  <li>
-                    <a href="ourTeam.html">Our Team</a>
-                  </li>
-                </ul>
-              </li>
             </ul>
           </div>
           <!-- .navbar-collapse -->
