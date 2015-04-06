@@ -9,6 +9,11 @@
 
 	<title></title>
 	<style>
+		.destination{
+			background: orange;
+			border: 1px gray solid;
+			padding: 10px;
+		}
 		  .img-item{
 			width: 100%;
 		  }
@@ -148,11 +153,37 @@
 
 	<div class="container">
 	 	<div class="row">
-	 		<div class="col-md-2">
+	 		<div class="col-md-3">
 	 			<!-- form -->
-		 		<h4>City: San Francisco</h4>
-		 		<input type="text" class="form-control" placeholder="Street">
+		 		<form class="destination">
+					<div class="form-group">	
+				 		<label for="InputDestination">Destination</label>
+				 		<input type="text" class="form-control input-sm" id="InputDestination" placeholder="e.g. city/hotel name">
+				 	</div>	
+
+			 		<div class="form-group">
+			 			<div class="col-md-6">	
+				 			<label for="InputCheckin">check in</label>
+				 			<input type="text" class="form-control input-sm" id="InputCheckin" placeholder="10 june">
+				 		</div>		
+				 	</div>	
+
+					<div class="form-group">
+					 	<div class="col-md-6">		
+				 			<label for="InputCheckout">check out</label>
+				 			<input type="text" class="form-control input-sm" id="InputCheckout" placeholder="20 june">
+				 		</div>	
+				 	</div>	
+	
+			 		<div class="form-group">	
+				 			<label for="InputGuests">guests</label>
+				 			<input type="text" class="form-control input-sm" id="InputGuests" placeholder="2 adults,1 child">
+				 	</div>
+				 		<button type="submit" class="btn btn-default">Submit</button>		
+				</form>		
+
 		 		<br>
+		 	<div class="destination">	
 				<h5>PRICE PER NIGHT</h5>
 				<div class="checkbox">
 					<label>
@@ -253,11 +284,12 @@
 					    <input type="checkbox" value="">
 					    Fridge
 					</label>
-				</div>				
+				</div>
+			</div>					
 			<!-- end form -->
 			</div>
 
-			<div class="col-md-10"	
+			<div class="col-md-9"	
 				
 					
 					<!-- options bar -->
