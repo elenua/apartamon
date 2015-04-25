@@ -44,6 +44,19 @@
 
 
     </style>
+
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script>
+  $(function() {
+    $( "#datepicker" ).datepicker();
+  });
+  </script>
+
+
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
     <script>
 var map;
@@ -290,25 +303,28 @@ google.maps.event.addDomListener(window, 'load', initialize);
 				 		<div class="form-group">
 				 			<div class="col-md-6">	
 					 			<label for="InputCheckin">check in</label>
-					 			<input type="text" class="form-control input-sm" id="InputCheckin" placeholder="10 june">
+					 			<p>Date: <input type="text" id="datepicker"></p>
 					 		</div>		
 					 	</div>	
 
 						<div class="form-group">
 						 	<div class="col-md-6">		
 					 			<label for="InputCheckout">check out</label>
-					 			<input type="text" class="form-control input-sm" id="InputCheckout" placeholder="20 june">
+					 			<p>Date: <input type="text" id="datepicker"></p>
 					 		</div>	
 					 	</div>	
 		
-				 		<div class="form-group">	
+				 		<div class="form-group">
+			 				<div class="col-md-12">	
 					 			<label for="InputGuests">guests</label>
 					 			<input type="text" class="form-control input-sm" id="InputGuests" placeholder="2 adults,1 child">
-					 	</div>
-					 	<h4>Total price $150/day $150/month</h4>
-					 		<button type="submit" class="btn btn-default">Submit</button>		
-					</form>		
-				</div>
+					 		</div>
+					 		<div class="col-md-12">
+					 			<h4>Total price $150</h4>
+					 		</div>
+					 		<button type="submit" class="btn btn-default">Submit</button>
+					 	</form>		
+					</div>
 
 		 		<!-- map -->	 			
 	 			<div id="map" class="col-md-12">
