@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Custom styles for this template -->
+    <link href="./css/sticky-footer.css" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+	<title></title>
+	<style type="text/css">
+		
+		.destination{
+			background: orange;
+			border: 1px gray solid;
+			padding: 10px;
+		}
+		.img-box{
+			padding: 2%; 
+		}
+
+		.img-item{
+			width: 100%;
+		}
+		.navbar-default{
+			background: transparent;
+		}
+	</style>
+</head>
+<body>
+	<!-- navbar -->
+<div class="container">	
+	<div class="row">
+ 	
+      <div class="container">
+        <nav class="navbar navbar-default" role="navigation">
+          <div class="navbar-header">
+            <a class="logo" href="index.html">
+              <img src="http://lorempixel.com/260/50/" data-logo-default="http://lorempixel.com/260/50/" data-logo-alt="Logo" alt="Logo" />
+            </a>
+          </div>
+
+          <div class="nav-toggle collapsed" data-toggle="collapse" data-target="#navbarMain">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="navbarMain">
+            <ul class="nav navbar-nav navbar-right">
+				<li class="dropdown">
+	              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Language <span class="caret"></span></a>
+	              <ul class="dropdown-menu" role="menu">
+	                <li><a href="#">English</a></li>
+	                <li><a href="#">German</a></li>
+	                <li><a href="#">Japaneese</a></li>
+	                <li class="divider"></li>
+	                <li class="dropdown-header">Others</li>
+	              </ul>
+	            </li>
+
+				<li class="dropdown">
+	              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Currency <span class="caret"></span></a>
+	              <ul class="dropdown-menu" role="menu">
+	                <li><a href="#">USD</a></li>
+	                <li><a href="#">EUR</a></li>
+	                <li><a href="#">GPH</a></li>
+	              </ul>
+	            </li>
+            </ul>
+
+            <ul class="nav navbar-nav collapsed-color navbar-right">
+
+              <li class="active">
+                <a href="#" class="scroll-up">Home</a>
+              </li>
+
+              <li>
+                <a href="./travel-gallery.html" class="scroll">Gallery</a>
+              </li>
+              <li>
+                <a href="./travel-list.html" class="scroll">List</a>
+              </li>              
+              <li>
+                <a href="./index.html" class="scroll">Details</a>
+              </li> 
+            </ul>
+          </div>
+          <!-- .navbar-collapse -->
+        </nav>
+      </div>   
+	</div>    
+
+        	
+	<!-- end navbar -->
+
+	
+ 	<div class="row">
+ 		<div class="col-md-3">
+ 			<!-- form -->
+
+ 			<form class="destination">
+				<div class="form-group">	
+			 		<label for="InputDestination">Destination</label>
+			 		<input type="text" class="form-control input-sm" id="InputDestination" placeholder="e.g. city/hotel name">
+			 	</div>	
+
+		 		<div class="form-group">
+		 			<div class="col-md-6">	
+			 			<label for="InputCheckin">check in</label>
+			 			<input type="text" class="form-control input-sm" id="InputCheckin" placeholder="10 june">
+			 		</div>		
+			 	</div>	
+
+				<div class="form-group">
+				 	<div class="col-md-6">		
+			 			<label for="InputCheckout">check out</label>
+			 			<input type="text" class="form-control input-sm" id="InputCheckout" placeholder="20 june">
+			 		</div>	
+			 	</div>	
+
+		 		<div class="form-group">	
+			 			<label for="InputGuests">guests</label>
+			 			<input type="text" class="form-control input-sm" id="InputGuests" placeholder="2 adults,1 child">
+			 	</div>
+			 		<button type="submit" class="btn btn-default">Submit</button>		
+			</form>
+			<!-- end form -->			
+		</div>
+
+		<!-- content -->
+ 		
+			<div class="col-md-9">
+				<div class="row">
+ 			</div>
+ 		</div>
+ 		<!-- end content -->		
+	</div>
+</div>
+
+<!-- footer -->
+<footer class="footer">
+	<div class="container">
+		<small><a href="">About US</a></small>&nbsp;
+		<small><a href="">Terms of Service</a></small>&nbsp;
+		<small><a href="">Private policy</a></small>&nbsp;
+	</div>
+</footer>
+<!-- end footer -->		
+
+</body>
+</html>
