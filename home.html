@@ -6,39 +6,14 @@
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<!-- Custom styles for this template -->
     <link href="./css/sticky-footer.css" rel="stylesheet">
+    <link href="./css/travel.css" rel="stylesheet" type="text/css">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
-	<title></title>
-	<style type="text/css">
-		body{
-    		background:url('img/pool.jpg');
-    		background-size: cover;
-    		background-repeat: no-repeat;
-   	 		background-position: center center;
-    		min-height: 100%;
-		}
-		
-		.destination{
-			background: orange;
-			border: 1px gray solid;
-			padding: 10px;
-			margin-top: 80px;
-		}
-		.img-box{
-			padding: 2%; 
-		}
-
-		.img-item{
-			width: 100%;
-		}
-		.navbar-default{
-			background: transparent;
-		}
-	</style>
+	<title>Travel</title>
 </head>
-<body>
+<body id="basis">
 	<!-- navbar -->
 <div class="container">	
 	<div class="row">
@@ -114,7 +89,7 @@
  		<div class="col-md-3">
  			<!-- form -->
 
- 			<form class="destination">
+ 			<form class="destination" id="input-form">
 				<div class="form-group">	
 			 		<label for="InputDestination">Destination</label>
 			 		<input type="text" class="form-control input-sm" id="InputDestination" placeholder="e.g. city/hotel name">
