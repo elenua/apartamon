@@ -1,393 +1,381 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
-	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-	<!-- Custom styles for this template -->
-    <link href="./css/sticky-footer.css" rel="stylesheet">
-    <link href="./css/travel.css" rel="stylesheet" type="text/css">
+	<head>
+		<meta charset="utf-8">
+		<title>Travel</title>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		<!-- Custom styles for this template -->
+	    <link href="./css/sticky-footer.css" rel="stylesheet">
+	    <link href="./css/travel.css" rel="stylesheet" type="text/css">
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
+	    <!--start map -->
+	 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 
-	<title>Travel</title>
+		<script>
 
-    <!--start map -->
- 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+			function initialize() {
 
-	<script>
+			  	var mapCenterLatlng = new google.maps.LatLng(-25.363882, 131.044922);
 
-		function initialize() {
+			  	var mapOptions = {
+			   		zoom: 10,
+			    	center: mapCenterLatlng
+			  	}
 
-		  var mapCenterLatlng = new google.maps.LatLng(-25.363882, 131.044922);
+			  	var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
-		  var mapOptions = {
-		    zoom: 10,
-		    center: mapCenterLatlng
-		  }
+			  	var markerLatlng = new google.maps.LatLng(-25.363882, 131.044922);
+			  	var marker = new google.maps.Marker({
+			      	position: markerLatlng,
+			      	map: map,
+			      	title: 'Hello World!'
+			  	});
 
-		  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+			  	var markerLatlng = new google.maps.LatLng(-25.393887, 131.044922);
+			  	var marker = new google.maps.Marker({
+			      	position: markerLatlng,
+			      	map: map,
+			      	title: 'Hello World 2!'
+			  	});
 
-		  var markerLatlng = new google.maps.LatLng(-25.363882, 131.044922);
-		  var marker = new google.maps.Marker({
-		      position: markerLatlng,
-		      map: map,
-		      title: 'Hello World!'
-		  });
+			}
 
-		  var markerLatlng = new google.maps.LatLng(-25.393887, 131.044922);
-		  var marker = new google.maps.Marker({
-		      position: markerLatlng,
-		      map: map,
-		      title: 'Hello World 2!'
-		  });
+			google.maps.event.addDomListener(window, 'load', initialize);
 
-		}
+		</script>
+	    <!--end map -->
 
-		google.maps.event.addDomListener(window, 'load', initialize);
+	</head>
+	<body>
+		<!-- navbar -->
+		<div class="container">
+			<div class="row">
+			 	<header class="header header-animated">
+			      	<div class="container">
+			        	<nav class="navbar navbar-default" role="navigation">
+			          		<div class="navbar-header">
+			            		<a class="logo" href="index.html">
+			              			<img src="http://lorempixel.com/260/50/" data-logo-default="http://lorempixel.com/260/50/" data-logo-alt="Logo" alt="Logo" />
+			            		</a>
+			        		</div>
 
-	</script>
-    <!--end map -->
+					        <div class="nav-toggle collapsed" data-toggle="collapse" data-target="#navbarMain">
+					            <span></span>
+					            <span></span>
+					            <span></span>
+					            <span></span>
+					            <span></span>
+					            <span></span>
+					        </div>
 
-</head>
-<body>
-	<!-- navbar -->
-	
-<div class="container">
-<div class="row">
- 	<header class="header header-animated">
-      <div class="container">
-        <nav class="navbar navbar-default" role="navigation">
-          <div class="navbar-header">
-            <a class="logo" href="index.html">
-              <img src="http://lorempixel.com/260/50/" data-logo-default="http://lorempixel.com/260/50/" data-logo-alt="Logo" alt="Logo" />
-            </a>
-          </div>
+					        <!-- Collect the nav links, forms, and other content for toggling -->
+					        <div class="collapse navbar-collapse" id="navbarMain">
+					            <ul class="nav navbar-nav navbar-right">
+									<li class="dropdown">
+							            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Language <span class="caret"></span></a>
+							            <ul class="dropdown-menu" role="menu">
+							                <li><a href="#">English</a></li>
+							                <li><a href="#">German</a></li>
+							                <li><a href="#">Japaneese</a></li>
+							                <li class="divider"></li>
+							                <li class="dropdown-header">Others</li>
+							            </ul>
+						            </li>
 
-          <div class="nav-toggle collapsed" data-toggle="collapse" data-target="#navbarMain">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+									<li class="dropdown">
+						              	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Currency <span class="caret"></span></a>
+						              	<ul class="dropdown-menu" role="menu">
+						                	<li><a href="#">USD</a></li>
+						                	<li><a href="#">EUR</a></li>
+						                	<li><a href="#">GPH</a></li>
+						              	</ul>
+						            </li>
+					            </ul>
 
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="navbarMain">
-            <ul class="nav navbar-nav navbar-right">
-				<li class="dropdown">
-	              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Language <span class="caret"></span></a>
-	              <ul class="dropdown-menu" role="menu">
-	                <li><a href="#">English</a></li>
-	                <li><a href="#">German</a></li>
-	                <li><a href="#">Japaneese</a></li>
-	                <li class="divider"></li>
-	                <li class="dropdown-header">Others</li>
-	              </ul>
-	            </li>
+					            <ul class="nav navbar-nav collapsed-color navbar-right">
 
-				<li class="dropdown">
-	              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Currency <span class="caret"></span></a>
-	              <ul class="dropdown-menu" role="menu">
-	                <li><a href="#">USD</a></li>
-	                <li><a href="#">EUR</a></li>
-	                <li><a href="#">GPH</a></li>
-	              </ul>
-	            </li>
+					              	<li>
+					                	<a href="./home.html" class="scroll-up">Home</a>
+					              	</li>
+					              	<li>
+					                	<a href="./travel-gallery.html" class="scroll">Gallery</a>
+					              	</li>
+					              	<li class="active">
+					                	<a href="./travel-list.html" class="scroll">List</a>
+					              	</li>              
+					              	<li>
+					                	<a href="./index.html" class="scroll">Details</a>
+					              	</li> 
+					            </ul>
+					        </div>
+					          <!-- .navbar-collapse -->
+					    </nav>
+					</div>
+				</header>
+			</div>
+		
+		 	<div class="row">
+		 		<div class="col-md-3">
+		 			<!-- form -->
+			 		<form class="destination">
+						<div class="form-group">	
+					 		<label for="InputDestination">Destination</label>
+					 		<input type="text" class="form-control input-sm" id="InputDestination" placeholder="e.g. city/hotel name">
+					 	</div>	
 
-            </ul>
+				 		<div class="form-group">
+				 			<div class="col-md-6">	
+					 			<label for="InputCheckin">check in</label>
+					 			<input type="text" class="form-control input-sm" id="InputCheckin" placeholder="10 june">
+					 		</div>		
+					 	</div>	
 
-            <ul class="nav navbar-nav collapsed-color navbar-right">
+						<div class="form-group">
+						 	<div class="col-md-6">		
+					 			<label for="InputCheckout">check out</label>
+					 			<input type="text" class="form-control input-sm" id="InputCheckout" placeholder="20 june">
+					 		</div>	
+					 	</div>	
+		
+				 		<div class="form-group">	
+					 			<label for="InputGuests">guests</label>
+					 			<input type="text" class="form-control input-sm" id="InputGuests" placeholder="2 adults,1 child">
+					 	</div>
+					 	<button type="submit" class="btn btn-default">Submit</button>		
+					</form>
 
-              <li>
-                <a href="./home.html" class="scroll-up">Home</a>
-              </li>
-              <li>
-                <a href="./travel-gallery.html" class="scroll">Gallery</a>
-              </li>
-              <li class="active">
-                <a href="./travel-list.html" class="scroll">List</a>
-              </li>              
-              <li>
-                <a href="./index.html" class="scroll">Details</a>
-              </li> 
+			 		<br>
+				 	<div class="destination">	
+						<h5>PRICE PER NIGHT</h5>
+						<div class="checkbox">
+							<label>
+							    <input type="checkbox" value="">
+							    0$&mdash;50$
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+							    <input type="checkbox" value="">
+							    50$&mdash;100$
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+							    <input type="checkbox" value="">
+							    100$&mdash;200$
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+							    <input type="checkbox" value="">
+							    more than 200$
+							</label>
+						</div>
 
+						<br>
+				 		<h5>TYPE OF DWELLING</h5>
+				 		<div class="checkbox">
+							<label>
+							    <input type="checkbox" value="">
+							    Apartment
+							</label>
+						</div>
+							<div class="checkbox">
+							<label>
+							    <input type="checkbox" value="">
+							     Hotel
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+							    <input type="checkbox" value="">
+							    Vila
+							</label>
+						</div>
+							<div class="checkbox">
+							<label>
+							    <input type="checkbox" value="">
+							     Hostel
+							</label>
+						</div>
+						<br>
+				 		<h6>FACILITIES</h6>
+				 			<div class="checkbox">
+							<label>
+							    <input type="checkbox" value="">
+							    Wi&mdash;Fi
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+							    <input type="checkbox" value="">
+							    Breakfast
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+							    <input type="checkbox" value="">
+							    Smoking allowed
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+							    <input type="checkbox" value="">
+							     Air conditioning
+							</label>
+						</div>		
+						<div class="checkbox">
+							<label>
+							    <input type="checkbox" value="">
+							    Kids friendly
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+							    <input type="checkbox" value="">
+							     Pets allowed
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+							    <input type="checkbox" value="">
+							    TV
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+							    <input type="checkbox" value="">
+							    Fridge
+							</label>
+						</div>
+					</div>					
+					<!-- end form -->
+					</div>
 
-            </ul>
-          </div>
-          <!-- .navbar-collapse -->
-        </nav>
-      </div>
-    </header>
-</div>
-	
-	 	<div class="row">
-	 		<div class="col-md-3">
-	 			<!-- form -->
-		 		<form class="destination">
-					<div class="form-group">	
-				 		<label for="InputDestination">Destination</label>
-				 		<input type="text" class="form-control input-sm" id="InputDestination" placeholder="e.g. city/hotel name">
-				 	</div>	
+					<div class="col-md-9">	
 
-			 		<div class="form-group">
-			 			<div class="col-md-6">	
-				 			<label for="InputCheckin">check in</label>
-				 			<input type="text" class="form-control input-sm" id="InputCheckin" placeholder="10 june">
-				 		</div>		
-				 	</div>	
+						<!-- options bar -->
+						<div class="row">
+							<div class="col-md-2">
+								<div class="dropdown clearfix">
+									<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+									    Sort by
+									    <span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Popular</a></li>
+										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Highest Rating</a></li>
+										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Lowest Rating</a></li>
+										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+									</ul>
+								</div>
+							</div>
+							<!-- end options bar -->	
 
-					<div class="form-group">
-					 	<div class="col-md-6">		
-				 			<label for="InputCheckout">check out</label>
-				 			<input type="text" class="form-control input-sm" id="InputCheckout" placeholder="20 june">
-				 		</div>	
-				 	</div>	
-	
-			 		<div class="form-group">	
-				 			<label for="InputGuests">guests</label>
-				 			<input type="text" class="form-control input-sm" id="InputGuests" placeholder="2 adults,1 child">
-				 	</div>
-				 		<button type="submit" class="btn btn-default">Submit</button>		
-				</form>		
+					       		
+							<!-- gallery switch -->
+							<div class="col-md-2 col-md-offset-8">
+								<a class="btn btn-default" href="http://elenua.github.io/travel/travel-list.html" role="button btn-md">
+									<span class="glyphicon glyphicon-th-list" aria-hidden="true">
+									</span>
+								</a>
+				
+								<a class="btn btn-default" href="http://elenua.github.io/travel/travel-gallery.html" role="button btn-md">
+									<span class="glyphicon glyphicon-th" aria-hidden="true">
+									</span>
+								</a>
+							</div>	
+							<!-- end gallery switch -->		
+						</div>
+						</br>
 
-		 		<br>
-		 	<div class="destination">	
-				<h5>PRICE PER NIGHT</h5>
-				<div class="checkbox">
-					<label>
-					    <input type="checkbox" value="">
-					    0$&mdash;50$
-					 </label>
-				</div>
-				<div class="checkbox">
-					<label>
-					    <input type="checkbox" value="">
-					    50$&mdash;100$
-					</label>
-				</div>
-				<div class="checkbox">
-					<label>
-					    <input type="checkbox" value="">
-					    100$&mdash;200$
-					</label>
-				</div>
-				<div class="checkbox">
-					<label>
-					    <input type="checkbox" value="">
-					    more than 200$
-					</label>
-				</div>
-				<br>
-		 		<h5>TYPE OF DWELLING</h5>
-		 		<div class="checkbox">
-					<label>
-					    <input type="checkbox" value="">
-					    Apartment
-					</label>
-				</div>
-					<div class="checkbox">
-					<label>
-					    <input type="checkbox" value="">
-					     Hotel
-					</label>
-				</div>
-				<div class="checkbox">
-					<label>
-					    <input type="checkbox" value="">
-					    Vila
-					</label>
-				</div>
-					<div class="checkbox">
-					<label>
-					    <input type="checkbox" value="">
-					     Hostel
-					</label>
-				</div>
-				<br>
-		 		<h6>FACILITIES</h6>
-		 			<div class="checkbox">
-					<label>
-					    <input type="checkbox" value="">
-					    Wi&mdash;Fi
-					</label>
-				</div>
-				<div class="checkbox">
-					<label>
-					    <input type="checkbox" value="">
-					    Breakfast
-					</label>
-				</div>
-				<div class="checkbox">
-					<label>
-					    <input type="checkbox" value="">
-					    Smoking allowed
-					</label>
-				</div>
-				<div class="checkbox">
-					<label>
-					    <input type="checkbox" value="">
-					     Air conditioning
-					</label>
-				</div>		
-				<div class="checkbox">
-					<label>
-					    <input type="checkbox" value="">
-					    Kids friendly
-					</label>
-				</div>
-				<div class="checkbox">
-					<label>
-					    <input type="checkbox" value="">
-					     Pets allowed
-					</label>
-				</div>
-				<div class="checkbox">
-					<label>
-					    <input type="checkbox" value="">
-					    TV
-					</label>
-				</div>
-				<div class="checkbox">
-					<label>
-					    <input type="checkbox" value="">
-					    Fridge
-					</label>
-				</div>
-			</div>					
-			<!-- end form -->
+						<div class="row">		
+							<div class="col-md-7">	
+								<!-- img details -->
+					 			<div class="row outline">
+					 				<div class="col-md-6 object-item">
+	 
+						 				<img id="image-3" src="http://lorempixel.com/263/198/" title="" class="img-thumbnail img-responsive img-item">
+										<!-- end of #mainwrapper--> 	      
+						 			</div>
+						 			<div class="col-md-6">
+						 				
+						 				<h4>Title</h4>
+						 				<p>$150/day</p>
+										<p>Lorem ipsum dolor sit amet, cu est aeque adipiscing. Sit an odio utamur, tincidunt disputando, qui decore eruditi ad.</p>
+
+										<a class="btn btn-warning" href="http://elenua.github.io/travel/index.html" role="button btn-md">Details</a>
+
+										<a class="btn btn-default" href="#" role="button btn-md">
+											<i class="fa fa-star-o"></i>
+										</a>
+
+						 			</div>	
+						 		</div>	
+						 		<!-- end img details -->
+						 		</br>
+
+						 		<!-- img details -->
+					 			<div class="row outline">
+					 				<div class="col-md-6 object-item"> 
+						 				<img id="image-3" src="http://lorempixel.com/263/198/" title="" class="img-thumbnail img-responsive img-item">
+						 			</div>
+						 			<div class="col-md-6">
+						 				<h4>Title</h4>
+						 				<p>$150/day</p>
+										<p>Lorem ipsum dolor sit amet, cu est aeque adipiscing. Sit an odio utamur, tincidunt disputando, qui decore eruditi ad.</p>
+										<button type="button" class="btn btn-warning">Details</button>
+										<button type="button" class="btn btn-default btn-md">
+											<i class="fa fa-star-o"></i>
+										</button>
+						 			</div>	
+						 		</div>	
+						 		<!-- end img details -->
+						 		</br>
+
+								<!-- img details -->
+					 			<div class="row outline">
+					 				<div class="col-md-6 object-item">
+								 		<img id="image-3" src="http://lorempixel.com/263/198/" title="" class="img-thumbnail img-responsive img-item">
+						 			</div>
+						 			<div class="col-md-6">
+						 	 			<h4>Title</h4>
+						 				<p>$150/day</p>
+										<p>Lorem ipsum dolor sit amet, cu est aeque adipiscing. Sit an odio utamur, tincidunt disputando, qui decore eruditi ad.</p>
+										<button type="button" class="btn btn-warning">Details</button>
+										<button type="button" class="btn btn-default btn-md">
+											<i class="fa fa-star-o"></i>
+										</button>
+						 			</div>	
+						 		</div>	
+						 		<!-- end img details -->
+						 		</br>
+					 		</div>
+
+					 		<div class="col-md-5">
+					 			<!-- map -->
+					 			<div id="map">
+									<div id="map-canvas">
+									</div>
+								</div>						
+						 		<!-- /.end map -->
+					 		</div>
+					 	</div>		
+			 		</div>	
+		 		</div>
 			</div>
 
-			<div class="col-md-9"	
-				
-					
-					<!-- options bar -->
-					<div class="row">
-						<div class="col-md-2">
-							<div class="dropdown clearfix">
-								<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-								    Sort by
-								    <span class="caret"></span>
-								</button>
-								<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Popular</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Highest Rating</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Lowest Rating</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
-								</ul>
-							</div>
-						</div>
-						<!-- end options bar -->	
-
-				       		
-						<!-- gallery switch -->
-						<div class="col-md-2 col-md-offset-8">
-							<a class="btn btn-default" href="http://elenua.github.io/travel/travel-list.html" role="button btn-md">
-							<span class="glyphicon glyphicon-th-list" aria-hidden="true"></span></a>
-			
-							<a class="btn btn-default" href="http://elenua.github.io/travel/travel-gallery.html" role="button btn-md">
-							<span class="glyphicon glyphicon-th" aria-hidden="true"></span></a>
-						</div>	
-
-						<!-- end gallery switch -->		
-					</div>
-					</br>
-
-					<div class="row">		
-						<div class="col-md-7">	
-							<!-- img details -->
-				 			<div class="row outline">
-				 				<div class="col-md-6 object-item">
- 
-					 				<img id="image-3" src="http://lorempixel.com/263/198/" title="" class="img-thumbnail img-responsive img-item">
-									<!-- end of #mainwrapper--> 	      
-					 			</div>
-					 			<div class="col-md-6">
-					 				
-					 				<h4>Title</h4>
-					 				<p>$150/day</p>
-									<p>Lorem ipsum dolor sit amet, cu est aeque adipiscing. Sit an odio utamur, tincidunt disputando, qui decore eruditi ad.</p>
-
-									<a class="btn btn-warning" href="http://elenua.github.io/travel/index.html" role="button btn-md">Details</a>
-
-									<a class="btn btn-default" href="#" role="button btn-md">
-									<i class="fa fa-star-o"></i>
-									</a>
-
-					 			</div>	
-					 		</div>	
-					 		<!-- end img details -->
-					 	</br>
-
-
-					 		<!-- img details -->
-				 			<div class="row outline">
-				 				<div class="col-md-6 object-item"> 
-					 				<img id="image-3" src="http://lorempixel.com/263/198/" title="" class="img-thumbnail img-responsive img-item">
-							 				
-					 			</div>
-					 			<div class="col-md-6">
-					 				<h4>Title</h4>
-					 				<p>$150/day</p>
-									<p>Lorem ipsum dolor sit amet, cu est aeque adipiscing. Sit an odio utamur, tincidunt disputando, qui decore eruditi ad.</p>
-									<button type="button" class="btn btn-warning">Details</button>
-									<button type="button" class="btn btn-default btn-md">
-									<i class="fa fa-star-o"></i>
-									</button>
-
-					 			</div>	
-					 		</div>	
-					 		<!-- end img details -->
-					 	</br>
-
-					 	
-							<!-- img details -->
-				 			<div class="row outline">
-				 				<div class="col-md-6 object-item">
-
-							 				<img id="image-3" src="http://lorempixel.com/263/198/" title="" class="img-thumbnail img-responsive img-item">
-					 			</div>
-					 			<div class="col-md-6">
-					 	 			<h4>Title</h4>
-					 				<p>$150/day</p>
-									<p>Lorem ipsum dolor sit amet, cu est aeque adipiscing. Sit an odio utamur, tincidunt disputando, qui decore eruditi ad.</p>
-									<button type="button" class="btn btn-warning">Details</button>
-									<button type="button" class="btn btn-default btn-md">
-									<i class="fa fa-star-o"></i>
-									</button>
-
-					 			</div>	
-					 		</div>	
-					 		<!-- end img details -->
-					 	</br>
-
-				 		</div>
-
-				 		<div class="col-md-5">
-				 			<!-- map -->
-					 		
-					 			<div id="map">
-									<div id="map-canvas"></div>
-								</div>
-													
-					 		<!-- /.end map -->
-
-				 		</div>
-				 	</div>		
-		 	</div>	
-	 	</div>
-	</div>
-
-	<footer class="footer">
-  		<div class="container">
-        	<small><a href="">About US</a></small>&nbsp;
-        	<small><a href="">Terms of Service</a></small>&nbsp;
-        	<small><a href="">Private policy</a></small>&nbsp;
-      	</div>
-	</footer>
-	 				
-</body>
+			<footer class="footer">
+		  		<div class="container">
+		        	<small><a href="">About US</a></small>&nbsp;
+		        	<small><a href="">Terms of Service</a></small>&nbsp;
+		        	<small><a href="">Private policy</a></small>&nbsp;
+		      	</div>
+			</footer>
+	 	</div>			
+	</body>
 </html>
