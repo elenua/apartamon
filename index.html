@@ -12,7 +12,7 @@
 		</script>
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js">
 		</script>
-
+		<!-- Calendar -->
 	    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
 		<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
@@ -21,7 +21,7 @@
 		    	$( ".datepicker" ).datepicker();
 		  	});
 		</script>
-
+		<!--End of calendar -->
 
 	    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 	    <script>
@@ -154,12 +154,6 @@
 							    <span class="sr-only">Next</span>
 							</a>
 						</div><!-- End Carousel -->
-
-						<div class="col-md-12 text-center"><!-- Icon -->
-							<i class="fa fa-eye fa-2x"></i>
-							<i class="fa fa-wifi fa-2x"></i>
-							<i class="fa fa-camera-retro fa-2x"></i>
-						</div><!-- End Icon -->
 		 			</div>
 		 			
 	 				<div class="col-md-12"><!-- conditions and description-->	
@@ -240,45 +234,36 @@
 			 	<div class="col-md-4">
 			 		<div class="col-md-12">
 			 			<form class="destination">
-							<div class="form-group">	
+							<div class="input-item form-group">	
 						 		<label for="InputDestination">Your trip</label>
-						 		<input type="text" class="form-control input-sm" id="InputDestination" placeholder="e.g. city/hotel name">
+						 		<input type="text" class="form-control input-md" id="InputDestination" placeholder="e.g. city/hotel name">
 						 	</div>	
 
-					 		<div class="form-group">
-					 			<div class="col-md-12">	
-						 			<label for="InputCheckin">check in</label>
-						 			<p>Date: <input type="text" class="datepicker"></p>
-						 		</div>		
+					 		<div class="input-item form-group">
+						 		<input type="text" class="datepicker form-control input-md" placeholder="check in">			
 						 	</div>	
 
-							<div class="form-group">
-							 	<div class="col-md-12">		
-						 			<label for="InputCheckout">check out</label>
-						 			<p>Date: <input type="text" class="datepicker"></p>
-						 		</div>	
+							<div class="input-item form-group">
+						 		<input type="text" class="datepicker form-control input-md" placeholder="check out">	
 						 	</div>	
 			
-					 		<div class="form-group">
-				 				<div class="col-md-12">	
-						 			<label for="InputGuests">guests</label>
-						 			<input type="text" class="form-control input-sm" id="InputGuests" placeholder="2 adults,1 child">
-						 		</div>
-						 		<div class="col-md-12">
-						 			<h4>Total price $150</h4>
-						 		</div>
-						 		<button type="submit" class="btn btn-default">Submit</button>
+					 		<div class="input-item form-group">
+						 		<input type="text" class="form-control input-md" id="InputGuests" placeholder="2 adults,1 child">
+						 	</div>
+						 		
+						 	<h5>Total price $150</h5>
+						 	<div class="text-center">
+						 		<button type="submit" id="book-button" class="btn btn-info btn-lg btn-block">Book</button>
 						 	</div>	
 						</form>		
 					</div>
-	 			
+	 				</br>
 		 			<div class="col-md-12"><!-- map -->
-		 				<p>Location of the place</p>
 						<div id="map-canvas" class="border-shadow"></div>
 					</div><!-- end map -->	
 
 			 		<div class="col-md-12">	
-			 			<p>full address</p>
+			 			<p>Spain, Barcelona, La Rambla 12</p>
 			 		</div>
 			 	</div>
 			</div>	

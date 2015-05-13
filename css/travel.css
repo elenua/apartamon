@@ -41,14 +41,19 @@ p{
 }  
 .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img{
 	width: 100%;
-}	
+}
 #input-form{
 	margin-top: 80px;
 }
+
 #home{
 	background:url('../img/pool.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
 	min-height: 100%;
+}
+.input-item{
+	margin: 0px 10px 25px;
+
 }
