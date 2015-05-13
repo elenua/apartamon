@@ -47,64 +47,75 @@
 	</head>
 
 	<body>
-		<!-- navbar -->
 		<div class="container">
+			<!-- navbar -->
 			<div class="row">
-	      <!-- Static navbar -->
-		      	<nav class="navbar navbar-default">
-		        	<div class="container-fluid"><!--/container-fluid -->
+	 			<!-- navbar -->
+		      	<div class="container">
+		        	<nav class="navbar navbar-default" role="navigation">
 		          		<div class="navbar-header">
-		          			<a class="logo" href="index.html">
+		            		<a class="logo" href="index.html">
 		              			<img src="http://lorempixel.com/260/50/" data-logo-default="http://lorempixel.com/260/50/" data-logo-alt="Logo" alt="Logo" />
 		            		</a>
+		          		</div>
 
-				            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-					            <span class="sr-only">Toggle navigation</span>
-					            <span class="icon-bar"></span>
-					            <span class="icon-bar"></span>
-					            <span class="icon-bar"></span>
-				            </button>
-	          			</div>
+				        <div class="nav-toggle collapsed" data-toggle="collapse" data-target="#navbarMain">
+				            <span></span>
+				            <span></span>
+				            <span></span>
+				            <span></span>
+				            <span></span>
+				            <span></span>
+				        </div>
 
-			          	<div id="navbar" class="navbar-collapse collapse">
-			            	<ul class="nav navbar-nav navbar-right">
-			               		<li>
-			               			<a href="./home.html" class="scroll-up">Home</a>
-			               		</li>
-			              		<li>
-			              			<a href="./travel-gallery.html" class="scroll">Gallery</a></li>
-			              		<li>
-			              			<a href="./travel-list.html" class="scroll">List</a>
-			              		</li>         
-			              		<li class="active">
-			              			<a href="./index.html" class="scroll">Details</a>
-			              		</li> 
-
-			              		<li class="dropdown">
-				              		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Language <span class="caret"></span></a>
+				        <!-- Collect the nav links, forms, and other content for toggling -->
+				        <div class="collapse navbar-collapse" id="navbarMain">
+				            <ul class="nav navbar-nav navbar-right">
+								<li class="dropdown">
+					              	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Language <span class="caret"></span></a>
 					              	<ul class="dropdown-menu" role="menu">
-						                <li><a href="#">English</a></li>
-						                <li><a href="#">German</a></li>
-						                <li><a href="#">Japaneese</a></li>
-						                <li class="divider"></li>
-						                <li class="dropdown-header">Others</li>
+					                	<li><a href="#">English</a></li>
+					                	<li><a href="#">German</a></li>
+					                	<li><a href="#">Japaneese</a></li>
+					                	<li class="divider"></li>
+					                	<li class="dropdown-header">Others</li>
 					              	</ul>
-					            </li>
+						        </li>
 
 								<li class="dropdown">
 					              	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Currency <span class="caret"></span></a>
 					              	<ul class="dropdown-menu" role="menu">
-						                <li><a href="#">USD</a></li>
-						                <li><a href="#">EUR</a></li>
-						                <li><a href="#">GPH</a></li>
+					                	<li><a href="#">USD</a></li>
+					                	<li><a href="#">EUR</a></li>
+					                	<li><a href="#">GPH</a></li>
 					              	</ul>
 					            </li>
-			            	</ul>
-			          	</div>
-	        		</div><!--/.container-fluid -->
-	      		</nav>
-	     	</div>
+				            </ul>
+
+				            <ul class="nav navbar-nav collapsed-color navbar-right">
+
+				              	<li>
+				                	<a href="./home.html" class="scroll-up">Home</a>
+				              	</li>
+
+				              	<li>
+				                	<a href="./travel-gallery.html" class="scroll">Gallery</a>
+				              	</li>
+				              	<li>
+				                	<a href="./travel-list.html" class="scroll">List</a>
+				              	</li>              
+				              	<li class="active">
+				                	<a href="./index.html" class="scroll">Details</a>
+				              	</li> 
+				            </ul>
+				        </div>
+				          <!-- .navbar-collapse -->
+				    </nav>
+				</div>
+				<!-- end navbar -->
+			</div>
 	    	<!-- .end navbar -->
+
 			<div class="row">
 			 	<div class="col-md-8 border-shadow"><!-- title, image, description-->
 			 		<div class="col-md-12">
@@ -251,13 +262,17 @@
 			 		</div>
 			 	</div>
 			</div>	
-		</div>		
+		</div>	
+
+		<!-- footer -->
 		<footer class="footer">
 	      	<div class="container">
 		        <small><a href="">About US</a></small>&nbsp;
 		        <small><a href="">Terms of Service</a></small>&nbsp;
 		        <small><a href="">Private policy</a></small>&nbsp;
 		    </div>
-	    </footer> 	
+	    </footer>
+	    <!-- end footer -->	
+	    	
 	</body>
 </html>
