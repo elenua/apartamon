@@ -92,32 +92,29 @@
 		 	<div class="row">
 		 		<div class="col-md-3">
 		 			<!-- form -->
-		 			<form class="destination" id="input-form">
-						<div class="form-group">	
-					 		<label for="InputDestination">Destination</label>
-					 		<input type="text" class="form-control input-sm" id="InputDestination" placeholder="e.g. city/hotel name">
+		 			<form class="destination">
+						<div class="input-item form-group">	
+					 		<label for="InputDestination">Your trip</label>
+					 		<input type="text" class="form-control input-md" id="InputDestination" placeholder="e.g. city/hotel name">
 					 	</div>	
 
-				 		<div class="form-group">
-				 			<div class="col-md-6">	
-					 			<label for="InputCheckin">check in</label>
-					 			<input type="text" class="form-control input-sm" id="InputCheckin" placeholder="10 june">
-					 		</div>		
+				 		<div class="input-item form-group">
+					 		<input type="text" class="datepicker form-control input-md" placeholder="check in">			
 					 	</div>	
 
-						<div class="form-group">
-						 	<div class="col-md-6">		
-					 			<label for="InputCheckout">check out</label>
-					 			<input type="text" class="form-control input-sm" id="InputCheckout" placeholder="20 june">
-					 		</div>	
+						<div class="input-item form-group">
+					 		<input type="text" class="datepicker form-control input-md" placeholder="check out">	
 					 	</div>	
-
-				 		<div class="form-group">	
-					 		<label for="InputGuests">guests</label>
-					 		<input type="text" class="form-control input-sm" id="InputGuests" placeholder="2 adults,1 child">
+		
+				 		<div class="input-item-last form-group">
+					 		<input type="text" class="form-control input-md" id="InputGuests" placeholder="2 adults,1 child">
 					 	</div>
-					 	<button type="submit" class="btn btn-default">Submit</button>		
-					</form>
+					 		
+					 	<h4 class="text-center price-item">Total price <span class="price">$150</span></h4>
+					 	<div class="text-center">
+					 		<button type="submit" id="book-button" class="btn btn-info btn-lg btn-block">Book</button>
+					 	</div>	
+					</form>		
 					<!-- end form -->			
 				</div>
 
