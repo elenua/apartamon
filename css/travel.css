@@ -121,3 +121,7 @@ p{
 	font-size: 2.5em;
 	font-family: fantasy;
 }
+
+.features li{
+	background-color: wheat;
+}

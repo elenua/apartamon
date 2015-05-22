@@ -10,11 +10,21 @@
 	    <link href="./css/sticky-footer.css" rel="stylesheet">
 	    <link href="./css/travel.css" rel="stylesheet" type="text/css">
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
-		</script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js">
-		</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+		<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>		
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
+		<script>
+		$(document).ready(function() {
 
+		  var input = document.getElementById('InputDestination');
+		  autocomplete = new google.maps.places.Autocomplete(input, {types: ['(regions)']});
+
+		  $( ".datepicker" ).datepicker();
+
+		});
+		</script>
 	</head>
 	<body>
 		<div class="container">
