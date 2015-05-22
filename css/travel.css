@@ -93,7 +93,9 @@ p{
 .img-box:hover .caption{
 	opacity: 1;
 }
-
+.slide-caption p, .slide-caption h4 {
+	text-align: center;
+}
 
 .navbar-default .navbar-nav>li>a {
   color: #3C3838;
