@@ -12,9 +12,11 @@ p{
 	width: 100%;
 }
 .destination{
-	background: orange;
-	border: 1px gray solid;
+	background: #BEDBE4;
 	padding: 10px;
+}
+.trip-form{
+	background-color: #BEDBE4;
 }
 #map-canvas {
 	height: 100%; 
@@ -29,7 +31,8 @@ p{
 	border: 2px solid #ddd; 
 }  	
 .object-item{
-	padding: 5px;
+	padding: 10px;
+	background-color: whitesmoke;
 }
 .outline{
 	border: 2px solid #ddd;
@@ -98,7 +101,10 @@ p{
   font-size: 1.2em;
   background: #BEDBE4;
   margin-right: 14px;
-  padding: 15px 10px;
+  padding: 12px 10px;
+  border-radius: 2px;
+  min-width: 70px;
+  text-align: center;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
