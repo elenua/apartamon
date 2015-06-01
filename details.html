@@ -4,49 +4,20 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Travel</title>
+
 		<link href="./assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-		<!-- Custom styles for this template -->
+	    <link href="./assets/css/libs/jquery-ui.min.css" rel="stylesheet">
+	    <link href="./assets/css/travel.css" rel="stylesheet">
 	    <link href="./assets/css/sticky-footer.css" rel="stylesheet">
-	    <link href="./assets/css/travel.css" rel="stylesheet" type="text/css">
 
-	    <link href="./assets/css/jquery-ui.min.css" rel="stylesheet">
-		<script src="./assets/js/jquery.min.js"></script>
+		<script src="./assets/js/libs/jquery.min.js"></script>
+		<script src="./assets/js/libs/jquery-ui.min.js"></script>
 		<script src="./assets/bootstrap/js/bootstrap.min.js"></script>
-		<script src="./assets/js/jquery-ui.min.js"></script>
-	    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;libraries=places"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;libraries=places"></script>
 
-	    <script>
+		<script src="./assets/js/details.js"></script>
+		<script src="./assets/js/common.js"></script>
 
-		    $(document).ready(function(){
-		    	var input = document.getElementById('InputDestination');
-				autocomplete = new google.maps.places.Autocomplete(input, {types: ['(regions)']});
-		    });
-
-
-			var map;
-			function initialize() {
-				var myLatlng = new google.maps.LatLng(52.3640300, 4.8696900);
-				var mapOptions = {
-				   	zoom: 10,
-				    center: myLatlng
-			}
-				var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-
-				var marker = new google.maps.Marker({
-				    position: myLatlng,
-				    map: map,
-				    title: 'Hello World!'
-				});
-			}
-
-			google.maps.event.addDomListener(window, 'load', initialize);
-
-			$(function() {
-		    	$( ".datepicker" ).datepicker();
-		  	});
-	    </script>
-	    <!--end map -->
-	    
 	</head>
 
 	<body>
