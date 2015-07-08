@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Apartamon - Responsive Rental Template</title>
+
+		<link href="./assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	    <link href="./assets/css/libs/jquery-ui.min.css" rel="stylesheet">
+	    <link href="./assets/css/travel.css" rel="stylesheet">
+	    <link href="./assets/css/sticky-footer.css" rel="stylesheet">
+
+		<script src="./assets/js/libs/jquery.min.js"></script>
+		<script src="./assets/js/libs/jquery-ui.min.js"></script>
+		<script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;libraries=places"></script>
+
+		<script src="./assets/js/common.js"></script>
+
+	</head>
+	<body>
+		<div class="container">
+			<!-- navbar -->
+			<div class="row">
+	 			<!-- navbar -->
+		      	<div class="container">
+		        	<nav class="navbar navbar-default" role="navigation">
+		          		<div class="navbar-header">
+				          	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarMain" aria-expanded="false" aria-controls="navbarMain">
+			  					<span class="sr-only">Toggle navigation</span>
+			  					<span class="icon-bar"></span>
+			  					<span class="icon-bar"></span>
+			  					<span class="icon-bar"></span>
+			  				</button>
+		            		<a class="logo" href="./index.html">
+			              		Apartamon
+			            	</a>
+		          		</div>
+				        <!-- Collect the nav links, forms, and other content for toggling -->
+				        <div class="collapse navbar-collapse" id="navbarMain">
+
+				            <ul class="nav navbar-nav collapsed-color navbar-right">
+
+				              	<li>
+				                	<a href="./index.html" class="scroll-up">Home</a>
+				              	</li>
+
+				              	<li class="active">
+				                	<a href="./travel-gallery.html" class="scroll">Gallery</a>
+				              	</li>
+				              	<li>
+				                	<a href="./travel-list.html" class="scroll">List</a>
+				              	</li>              
+				              	<li>
+				                	<a href="./details.html" class="scroll">Details</a>
+				              	</li> 
+				            </ul>
+				        </div>
+				          <!-- .navbar-collapse -->
+				    </nav>
+				</div>
+				<!-- end navbar -->
+			</div>        	
+			<!-- .end navbar -->
+	
+		 	<div class="row">
+		 		<div class="col-sm-5 col-md-3">
+		 			<!-- form -->
+
+		 			<form class="destination">
+						<div class="input-item form-group">	
+					 		<label for="InputDestination">Your trip</label>
+					 		<input type="text" class="form-control input-md" id="InputDestination" placeholder="e.g. city/hotel name">
+					 	</div>	
+
+				 		<div class="input-item form-group">
+					 		<input type="text" class="datepicker form-control input-md" placeholder="check in">			
+					 	</div>	
+
+						<div class="input-item form-group">
+					 		<input type="text" class="datepicker form-control input-md" placeholder="check out">	
+					 	</div>	
+		
+				 		<div class="input-item-last form-group">
+					 		<input type="text" class="form-control input-md" id="InputGuests" placeholder="2 adults,1 child">
+					 	</div>
+					 	<div class="text-center">
+					 		<button type="submit" id="book-button" class="btn btn-info btn-lg btn-block">Search</button>
+					 	</div>	
+					</form>		
+					<br>
+
+				 	<div class="destination">	
+						<h5>PRICE PER NIGHT</h5>
+						<div class="checkbox">
+							<label>
+							    <input type="checkbox" value="">
+							    $0&mdash;50
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+							    <input type="checkbox" value="">
+							    $50&mdash;100
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+							    <input type="checkbox" value="">
+							    $100&mdash;200
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+							    <input type="checkbox" value="">
+							    more than $200
+							</label>
+						</div>
+						<br>
+				 		<h5>TYPE OF DWELLING</h5>
+				 		<div class="checkbox">
+							<label>
+							    <input type="checkbox" value="">
+							    Apartment
+							</label>
+						</div>
+							<div class="checkbox">
+							<label>
+							    <input type="checkbox" value="">
+							     Hotel
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+							    <input type="checkbox" value="">
+							    Vila
+							</label>
+						</div>
+							<div class="checkbox">
+							<label>
+							    <input type="checkbox" value="">
+							    Hostel
+							</label>
+						</div>
+						<br>
+				 		<h6>FACILITIES</h6>
+				 			<div class="checkbox">
+							<label>
+							    <input type="checkbox" value="">
+							    Wi&mdash;Fi
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+							    <input type="checkbox" value="">
+							    Breakfast
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+							    <input type="checkbox" value="">
+							    Smoking allowed
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+							    <input type="checkbox" value="">
+							     Air conditioning
+							</label>
+						</div>		
+						<div class="checkbox">
+							<label>
+							    <input type="checkbox" value="">
+							    Kids friendly
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+							    <input type="checkbox" value="">
+							     Pets allowed
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+							    <input type="checkbox" value="">
+							    TV
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+							    <input type="checkbox" value="">
+							    Fridge
+							</label>
+						</div>
+					</div>					
+					<!-- end form -->
+					<!-- options bar -->
+					<br/>
+					<div class="row">
+						<div class="col-md-2">
+							<div class="dropdown clearfix">
+								<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+								    Sort by
+								    <span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Popular</a></li>
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Highest Rating</a></li>
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Lowest Rating</a></li>
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+								</ul>
+							</div>
+						</div>				       		
+						<!-- gallery switch -->
+						<div class="col-md-2 col-md-offset-5">
+							<a class="btn btn-default btn-md" href="./travel-list.html" role="button">
+								<span class="glyphicon glyphicon-th-list" aria-hidden="true">
+								</span>
+							</a>
+						</div>	
+						<div class="col-md-2">
+							<a class="btn btn-default btn-md" href="./travel-gallery.html" role="button">
+								<span class="glyphicon glyphicon-th" aria-hidden="true">
+								</span>
+							</a>
+						</div>	
+						<!-- end gallery switch -->
+					</div>		
+					<!-- end options bar -->
+					<br/>
+				</div>
+
+				<!-- content -->
+	 			<div class="col-sm-7 col-md-9">
+	 				<div class="row">
+		 				<div class="col-md-4 img-box">
+		 					<a href="./details.html">
+		 						<img src="./assets/img/rooms/1.jpg" alt="Stylish apartment, bright rooms, private garden" class="img-thumbnail img-responsive img-item">
+		 					</a>	  
+		 					<a href="./details.html">
+			 					<div class="caption slide-caption">
+							        <h4>Penthouse with magnificent view.</h4>
+							        <p><span class="price">$112</span>/night</p>
+							    </div>
+						    </a>
+		 				</div>
+
+		 				<div class="col-md-4 img-box">
+		 					<a href="./details.html">
+		 						<img src="./assets/img/rooms/2.jpg" alt="Stylish apartment, bright rooms, private garden" class="img-thumbnail img-responsive img-item">
+		 					</a>
+		 					<a href="./details.html">
+			 					<div class="caption slide-caption">
+							        <h4>Lovely Room at Vondelpark</h4>
+							        <p><span class="price">$118</span>/night</p>
+							    </div>
+						    </a>
+		 				</div>
+
+		 				<div class="col-md-4 img-box">
+		 					<a href="./details.html">
+		 						<img src="./assets/img/rooms/3.jpg" alt="Stylish apartment, bright rooms, private garden" class="img-thumbnail img-responsive img-item">
+		 					</a>
+		 					<a href="./details.html">
+			 					<div class="caption slide-caption">
+							        <h4>Apartment with a private roofgarden</h4>
+							        <p><span class="price">$120</span>/night</p>
+							    </div>
+						    </a>
+		 				</div>
+
+
+		 				<div class="col-md-4 img-box">
+		 					<a href="./details.html">
+		 						<img src="./assets/img/rooms/4.jpg" alt="Stylish apartment, bright rooms, private garden" class="img-thumbnail img-responsive img-item">
+		 					</a>
+		 					<a href="./details.html">
+			 					<div class="caption slide-caption">
+							        <h4>Stay with JOY</h4>
+							        <p><span class="price">$124</span>/night</p>
+							    </div>
+						    </a>
+		 				</div>
+
+		 				<div class="col-md-4 img-box">
+		 					<a href="./details.html">
+		 						<img src="./assets/img/rooms/5.jpg" alt="Stylish apartment, bright rooms, private garden" class="img-thumbnail img-responsive img-item">
+		 					</a>
+		 					<a href="./details.html">
+			 					<div class="caption slide-caption">
+							        <h4>Nice apartment in Amsterdam</h4>
+							        <p><span class="price">$140</span>/night</p>
+							    </div>
+						    </a>
+		 				</div>
+
+		 				<div class="col-md-4 img-box">
+		 					<a href="./details.html">
+		 						<img src="./assets/img/rooms/6.jpg" alt="Stylish apartment, bright rooms, private garden" class="img-thumbnail img-responsive img-item">
+		 					</a>
+		 					<a href="./details.html">
+			 					<div class="caption slide-caption">
+							        <h4>Apartment with ROOFDECK in De Pijp!</h4>
+							        <p><span class="price">$163</span>/night</p>
+							    </div>
+						    </a>
+		 				</div>
+
+		 				<div class="col-md-4 img-box">
+		 					<a href="./details.html">
+		 						<img src="./assets/img/rooms/7.jpg" alt="Stylish apartment, bright rooms, private garden" class="img-thumbnail img-responsive img-item">
+		 					</a>
+		 					<a href="./details.html">
+			 					<div class="caption slide-caption">
+							        <h4>Houseboat, Spacious garden, Center</h4>
+							        <p><span class="price">$84</span>/night</p>
+							    </div>
+						    </a>
+		 				</div>
+
+		 				<div class="col-md-4 img-box">
+		 					<a href="./details.html">
+		 						<img src="./assets/img/rooms/8.jpg" alt="Stylish apartment, bright rooms, private garden" class="img-thumbnail img-responsive img-item">
+		 					</a>
+		 					<a href="./details.html">
+			 					<div class="caption slide-caption">
+							        <h4>Cottage in the Countryside</h4>
+							        <p><span class="price">$100</span>/night</p>
+							    </div>
+						    </a>
+		 				</div>
+
+		 				<div class="col-md-4 img-box">
+		 					<a href="./details.html">
+		 						<img src="./assets/img/rooms/9.jpg" alt="Stylish apartment, bright rooms, private garden" class="img-thumbnail img-responsive img-item">
+		 					</a>
+		 					<a href="./details.html">
+			 					<div class="caption slide-caption">
+							        <h4>Adam Place</h4>
+							        <p><span class="price">$152</span>/night</p>
+							    </div>
+						    </a>
+		 				</div>
+		 			</div>
+		 		</div>
+		 		<!-- end content -->		
+			</div>
+		</div>
+
+		<!-- footer -->
+		<footer class="footer">
+	  		<div class="container text-center">
+	        	<small><a href="">About US</a></small>&nbsp;
+	        	<small><a href="">Terms of Service</a></small>&nbsp;
+	        	<small><a href="">Private policy</a></small>&nbsp;
+	      	</div>
+		</footer>
+		<!-- end footer -->		
+	</body>
+</html>

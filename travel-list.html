@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Apartamon - Responsive Rental Template</title>
+
+		<link href="./assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	    <link href="./assets/css/libs/jquery-ui.min.css" rel="stylesheet">
+	    <link href="./assets/css/travel.css" rel="stylesheet">
+	    <link href="./assets/css/sticky-footer.css" rel="stylesheet">
+
+		<script src="./assets/js/libs/jquery.min.js"></script>
+		<script src="./assets/js/libs/jquery-ui.min.js"></script>
+		<script src="./assets/js/libs/jquery.expander.min.js"></script>
+		<script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;libraries=places"></script>
+
+		<script src="./assets/js/travel-list.js"></script>
+		<script src="./assets/js/common.js"></script>
+
+	</head>
+	<body>
+		<!-- navbar -->
+		<div class="container">
+			<div class="row">
+			 	<header class="header header-animated">
+			      	<div class="container">
+			        	<nav class="navbar navbar-default" role="navigation">
+			          		<div class="navbar-header">
+					          	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarMain" aria-expanded="false" aria-controls="navbarMain">
+				  					<span class="sr-only">Toggle navigation</span>
+				  					<span class="icon-bar"></span>
+				  					<span class="icon-bar"></span>
+				  					<span class="icon-bar"></span>
+				  				</button>
+			            		<a class="logo" href="./index.html">
+			              			Apartamon
+			            		</a>
+			          		</div>
+
+					        <!-- Collect the nav links, forms, and other content for toggling -->
+					        <div class="collapse navbar-collapse" id="navbarMain">
+					            <ul class="nav navbar-nav collapsed-color navbar-right">
+
+					              	<li>
+					                	<a href="./index.html" class="scroll-up">Home</a>
+					              	</li>
+					              	<li>
+					                	<a href="./travel-gallery.html" class="scroll">Gallery</a>
+					              	</li>
+					              	<li class="active">
+					                	<a href="./travel-list.html" class="scroll">List</a>
+					              	</li>              
+					              	<li>
+					                	<a href="./details.html" class="scroll">Details</a>
+					              	</li> 
+					            </ul>
+					        </div>
+					          <!-- .navbar-collapse -->
+					    </nav>
+					</div>
+				</header>
+			</div>
+		
+		 	<div class="row">
+		 		<div class="col-sm-5  col-md-3">
+		 			<!-- form -->
+			 		<form class="destination trip-form">
+						<div class="input-item form-group">	
+					 		<label for="InputDestination">Your trip</label>
+					 		<input type="text" class="form-control input-md" id="InputDestination" placeholder="e.g. city/hotel name">
+					 	</div>	
+
+				 		<div class="input-item form-group">
+					 		<input type="text" class="datepicker form-control input-md" placeholder="check in">			
+					 	</div>	
+
+						<div class="input-item form-group">
+					 		<input type="text" class="datepicker form-control input-md" placeholder="check out">	
+					 	</div>	
+		
+				 		<div class="input-item-last form-group">
+					 		<input type="text" class="form-control input-md" id="InputGuests" placeholder="2 adults,1 child">
+					 	</div>
+					 	<div class="text-center">
+					 		<button type="submit" id="book-button" class="btn btn-info btn-lg btn-block">Search</button>
+					 	</div>	
+					</form>		
+
+			 		<br/>
+				 	<div class="destination">	
+						<h5>PRICE PER NIGHT</h5>
+						<div class="checkbox">
+							<label>
+							    <input type="checkbox" value="">
+							    $0&mdash;50
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+							    <input type="checkbox" value="">
+							    $50&mdash;100
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+							    <input type="checkbox" value="">
+							    $100&mdash;200
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+							    <input type="checkbox" value="">
+							    more than $200
+							</label>
+						</div>
+						<br/>
+				 		<h5>TYPE OF DWELLING</h5>
+				 		<div class="checkbox">
+							<label>
+							    <input type="checkbox" value="">
+							    Apartment
+							</label>
+						</div>
+							<div class="checkbox">
+							<label>
+							    <input type="checkbox" value="">
+							     Hotel
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+							    <input type="checkbox" value="">
+							    Vila
+							</label>
+						</div>
+							<div class="checkbox">
+							<label>
+							    <input type="checkbox" value="">
+							     Hostel
+							</label>
+						</div>
+						<br/>
+				 		<h6>FACILITIES</h6>
+				 			<div class="checkbox">
+							<label>
+							    <input type="checkbox" value="">
+							    Wi&mdash;Fi
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+							    <input type="checkbox" value="">
+							    Breakfast
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+							    <input type="checkbox" value="">
+							    Smoking allowed
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+							    <input type="checkbox" value="">
+							     Air conditioning
+							</label>
+						</div>		
+						<div class="checkbox">
+							<label>
+							    <input type="checkbox" value="">
+							    Kids friendly
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+							    <input type="checkbox" value="">
+							     Pets allowed
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+							    <input type="checkbox" value="">
+							    TV
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+							    <input type="checkbox" value="">
+							    Fridge
+							</label>
+						</div>
+					</div>					
+					<!-- end form -->
+					<!-- options bar -->
+					<br/>
+					<div class="row">
+						<div class="col-md-2">
+							<div class="dropdown clearfix">
+								<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+								    Sort by
+								    <span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Popular</a></li>
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Highest Rating</a></li>
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Lowest Rating</a></li>
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+								</ul>
+							</div>
+						</div>				       		
+						<!-- gallery switch -->
+						<div class="col-md-2 col-md-offset-5">
+							<a class="btn btn-default btn-md" href="./travel-list.html" role="button">
+								<span class="glyphicon glyphicon-th-list" aria-hidden="true">
+								</span>
+							</a>
+						</div>	
+						<div class="col-md-2">
+							<a class="btn btn-default btn-md" href="./travel-gallery.html" role="button">
+								<span class="glyphicon glyphicon-th" aria-hidden="true">
+								</span>
+							</a>
+						</div>	
+						<!-- end gallery switch -->
+					</div>		
+					<!-- end options bar -->
+   					<br/>
+		 			<!-- map -->
+		 			<div id="map">
+						<div id="map-canvas">
+						</div>
+					</div>						
+			 		<!-- /.end map -->					
+				</div>
+
+				<div class="col-sm-7 col-md-9">	
+					<div class="row">		
+						<div class="col-md-12">	
+							<!-- img details -->
+				 			<div class="row object-item">
+				 				<div class="col-md-6 object-img">
+		 								<a href="./details.html">
+							 				<img src="./assets/img/rooms/1.jpg" alt="Large bright kitchen with balcony" class="img-thumbnail img-responsive img-item">
+							 			</a>	
+									<!-- end of #mainwrapper--> 	      
+					 			</div>
+					 			<div class="col-md-6">
+						 			<a href="./details.html">	
+						 				<h4>Penthouse room with magnificent view.</h4>
+						 			</a>	
+					 				<p>$112/day</p>
+									<p class="short-description">The common area consists of a fully equipped kitchen, dishwasher included, a bathroom with shower and bath and, off course, a toilet. We also offer you the possibility (if available) to use our BnB’s bikes. </p>
+
+									<a class="btn btn-warning btn-md" href="./details.html" role="button">Details</a>
+
+					 			</div>	
+					 		</div>	
+					 		<!-- end img details -->
+					 		<br/>
+
+					 		<!-- img details -->
+				 			<div class="row object-item">
+				 				<div class="col-md-6 object-img"> 
+					 				<a href="./details.html">
+						 				<img src="./assets/img/rooms/2.jpg" alt="Stylish apartment, bright rooms, private garden" class="img-thumbnail img-responsive img-item">
+						 			</a>	
+					 			</div>
+					 			<div class="col-md-6">
+						 			<a href="./details.html">
+						 				<h4>Lovely Room at Vondelpark</h4>
+						 			</a>	
+					 				<p>$118/day</p>
+									<p class="short-description">We love Amsterdam! We enjoy living close to the center of town! 
+										The lively town is around the corner, you can take a walk, take a bike or trams, which take you all over the city, you only need to walk around the corner and city smiles at you!</p>
+
+									<a class="btn btn-warning btn-md" href="./details.html" role="button">Details</a>
+					 			</div>	
+					 		</div>	
+					 		<!-- end img details -->
+					 		<br/>
+
+							<!-- img details -->
+				 			<div class="row object-item">
+				 				<div class="col-md-6 object-img">
+					 				<a href="./details.html">
+								 		<img src="./assets/img/rooms/3.jpg" alt="Stylish apartment, bright rooms, private garden" class="img-thumbnail img-responsive img-item">
+								 	</a>	
+					 			</div>
+					 			<div class="col-md-6">
+					 			<a href="./details.html">
+					 	 			<h4>Stylish apartment with a sunny private roofgarden</h4>
+					 	 		</a>	
+					 				<p>$120/day</p>
+									<p class="short-description">Facilities near the apartment: shops, (top)restaurants, public transport, park and more.The Linnaeussuite is the ideal place to come home to, after spending your day in Amsterdam.</p>
+									<a class="btn btn-warning btn-md" href="./details.html" role="button">Details</a>
+					 			</div>	
+					 		</div>	
+					 		<!-- end img details -->
+					 		<br/>
+
+					 		<!-- img details -->
+				 			<div class="row object-item">
+				 				<div class="col-md-6 object-img">
+					 				<a href="./details.html">
+								 		<img src="./assets/img/rooms/4.jpg" alt="Stylish apartment, bright rooms, private garden" class="img-thumbnail img-responsive img-item">
+								 	</a>	
+					 			</div>
+					 			<div class="col-md-6">
+						 			<a href="./details.html">
+						 	 			<h4>Stay with JOY</h4>
+						 	 		</a>	
+					 				<p>$124/day</p>
+									<p class="short-description">This lovely first floor apartment in the heart of famous old Amsterdams "Jordaan District ". Just 10 minutes walking distance from the Central Station, Dam Square, the Red light District and China Town.</p>
+									<a class="btn btn-warning btn-md" href="./details.html" role="button">Details</a>
+					 			</div>	
+					 		</div>	
+					 		<!-- end img details -->
+					 		<br/>
+
+					 		<!-- img details -->
+				 			<div class="row object-item">
+				 				<div class="col-md-6 object-img">
+					 				<a href="./details.html">
+								 		<img src="./assets/img/rooms/5.jpg" alt="Stylish apartment, bright rooms, private garden" class="img-thumbnail img-responsive img-item">
+								 	</a>	
+					 			</div>
+					 			<div class="col-md-6">
+						 			<a href="./details.html">
+						 	 			<h4>Nice apartment in Amsterdam</h4>
+						 	 		</a>	
+					 				<p>$140/day</p>
+									<p class="short-description">Private entrance/keys and a beautiful garden,100 % privacy.The apartment makes you feel one of the locals. Easy to reach from Central-Station by tramline 4 (6th stop is Prinsengracht)Only 2 minutes walk to number 728. 
+										This location is a peaceful part of the centre. </p>
+									<a class="btn btn-warning btn-md" href="./details.html" role="button">Details</a>
+					 			</div>	
+					 		</div>	
+					 		<!-- end img details -->
+					 		<br/>
+
+					 		<!-- img details -->
+				 			<div class="row object-item">
+				 				<div class="col-md-6 object-img">
+					 				<a href="./details.html">
+								 		<img src="./assets/img/rooms/6.jpg" alt="Stylish apartment, bright rooms, private garden" class="img-thumbnail img-responsive img-item">
+								 	</a>	
+					 			</div>
+					 			<div class="col-md-6">
+						 			<a href="./details.html">
+						 	 			<h4>Apartment with ROOFDECK in De Pijp!</h4>
+						 	 		</a>	
+					 				<p>$163/day</p>
+									<p class="short-description">In the middle of Amsterdam, at one of the most beautiful places near the famous Sarphatiepark in 'de Pijp', we offer you a nice apartment for a pleasant stay where you can have a great time in the city of Amsterdam. De Pijp is the most popular and most comfortable neighborhood, located close to the Museumplein (Van Gogh museum, Rijksmuseum and Stedelijk Museum), the famous Leidseplein and very close to the Heinekenplein. </p>
+									<a class="btn btn-warning btn-md" href="./details.html" role="button">Details</a>
+					 			</div>	
+					 		</div>	
+					 		<!-- end img details -->
+					 		<br/>
+
+					 		<!-- img details -->
+				 			<div class="row object-item">
+				 				<div class="col-md-6 object-img">
+					 				<a href="./details.html">
+								 		<img src="./assets/img/rooms/7.jpg" alt="Stylish apartment, bright rooms, private garden" class="img-thumbnail img-responsive img-item">
+								 	</a>	
+					 			</div>
+					 			<div class="col-md-6">
+						 			<a href="./details.html">
+						 	 			<h4>Houseboat, Spacious garden, Center</h4>
+						 	 		</a>	
+					 				<p>$84/day</p>
+									<p class="short-description">The most romantic spot in the most exciting part of Amsterdam? Our spacious houseboat in a historic lock with a large idyllic garden and a fantastic view over the river IJ and the skyline of Amsterdam.</p>
+									<a class="btn btn-warning btn-md" href="./details.html" role="button">Details</a>
+					 			</div>	
+					 		</div>	
+					 		<!-- end img details -->
+					 		<br/>
+
+					 		<!-- img details -->
+				 			<div class="row object-item">
+				 				<div class="col-md-6 object-img">
+					 				<a href="./details.html">
+								 		<img src="./assets/img/rooms/8.jpg" alt="Stylish apartment, bright rooms, private garden" class="img-thumbnail img-responsive img-item">
+								 	</a>	
+					 			</div>
+					 			<div class="col-md-6">
+						 			<a href="./details.html">
+						 	 			<h4>Your Little Cottage in the Countryside</h4>
+						 	 		</a>	
+					 				<p>$100/day</p>
+									<p class="short-description">Our B&amp;B cottage has two bedrooms for 2 or 4 persons. Each room has its own bathroom. One room has double bed, another one has a twin bed that can also be used as a double. The dining room is shared. The price is per room per night. The price is for one room. We have 2 rooms available. </p>
+									<a class="btn btn-warning btn-md" href="./details.html" role="button">Details</a>
+					 			</div>	
+					 		</div>	
+					 		<!-- end img details -->
+					 		<br/>
+
+					 		<!-- img details -->
+				 			<div class="row object-item">
+				 				<div class="col-md-6 object-img">
+					 				<a href="./details.html">
+								 		<img src="./assets/img/rooms/9.jpg" alt="Stylish apartment, bright rooms, private garden" class="img-thumbnail img-responsive img-item">
+								 	</a>	
+					 			</div>
+					 			<div class="col-md-6">
+						 			<a href="./details.html">
+						 	 			<h4>Adam Place</h4>
+						 	 		</a>	
+					 				<p>$152/day</p>
+									<p class="short-description">Great cozy place, right in the heart of Amsterdam. Best location on the canal, near many small trendy bars and restaurants. We live on the 3rd and 4th floor in the same building so if you need us we are always there to assist you with making a reservation at a restaurant or things like that.</p>
+									<a class="btn btn-warning btn-md" href="./details.html" role="button">Details</a>
+					 			</div>	
+					 		</div>	
+					 		<!-- end img details -->
+					 		<br/>
+				 		</div>
+				 	</div>		
+		 		</div>	
+			</div>
+		</div>
+			
+		<!-- footer -->
+		<footer class="footer">
+	  		<div class="container text-center">
+	        	<small><a href="">About US</a></small>&nbsp;
+	        	<small><a href="">Terms of Service</a></small>&nbsp;
+	        	<small><a href="">Private policy</a></small>&nbsp;
+	      	</div>
+		</footer>
+		<!-- end footer -->			
+	</body>
+</html>
